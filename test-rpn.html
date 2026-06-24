@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тест: оштрафует ли вас РПН? — Альянс Консалтинг</title>
+<meta name="description" content="Пройдите бесплатный тест за 1 минуту и узнайте, какой у вашего предприятия риск экологического штрафа от Росприроднадзора.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<style>
+  :root{--brand:#21808F;--ink:#103A42;--petrol:#155561;--green:#A8C725;--green-d:#6F8C12;--paper:#F4F5F1;--line:#E3E6DF;--slate:#5C6F6A;--red:#BD4A30;--amber:#C7891F}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;padding:0 0 50px}
+  .wrap{max-width:620px;margin:0 auto;padding:0 18px}
+  header.top{background:var(--ink);color:#fff;padding:15px 0;margin-bottom:8px}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:14px;font-family:'Manrope',sans-serif}
+  .logo{width:34px;height:34px;border-radius:8px;background:var(--brand);display:grid;place-items:center;font-weight:800;font-family:'IBM Plex Mono',monospace;color:#fff;font-size:13px}
+  .top a{color:#bcd0cc;text-decoration:none;font-size:13px;font-family:'IBM Plex Mono',monospace}
+  .top a:hover{color:#fff}
+  .intro{text-align:center;padding:28px 0 8px}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--green-d);letter-spacing:.06em;text-transform:uppercase}
+  h1{font-family:'Manrope',sans-serif;font-weight:800;font-size:28px;line-height:1.2;margin:10px 0 8px}
+  .intro p{color:var(--slate);font-size:15px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 24px;margin-top:18px;box-shadow:0 8px 26px rgba(16,58,66,.06)}
+  .pbar{height:8px;background:var(--line);border-radius:20px;overflow:hidden;margin-bottom:20px}
+  .pbar i{display:block;height:100%;width:20%;background:linear-gradient(90deg,var(--brand),var(--green));transition:width .3s}
+  .qnum{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--slate);margin-bottom:8px}
+  .qtext{font-family:'Manrope',sans-serif;font-weight:800;font-size:20px;line-height:1.35;margin-bottom:20px;color:var(--ink)}
+  .opts{display:flex;flex-direction:column;gap:10px}
+  .opt{display:block;width:100%;text-align:left;background:var(--paper);border:1.5px solid var(--line);border-radius:12px;padding:14px 18px;font-size:16px;font-family:'Inter',sans-serif;color:var(--ink);cursor:pointer;transition:.15s}
+  .opt:hover{border-color:var(--brand);background:#eef6f7}
+  .opt b{font-weight:600}
+  /* result */
+  .res-badge{display:inline-block;font-family:'Manrope',sans-serif;font-weight:800;font-size:14px;padding:7px 16px;border-radius:20px;color:#fff;margin-bottom:14px}
+  .res h2{font-family:'Manrope',sans-serif;font-weight:800;font-size:24px;margin-bottom:10px}
+  .res p{font-size:15.5px;color:#33474c;margin-bottom:12px}
+  .res ul{margin:0 0 14px 20px}
+  .res li{margin:6px 0;font-size:15px}
+  .score{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--slate);margin-bottom:16px}
+  .cta-box{background:var(--ink);color:#fff;border-radius:14px;padding:22px;text-align:center;margin-top:18px}
+  .cta-box h3{font-family:'Manrope',sans-serif;font-weight:800;font-size:19px;margin-bottom:6px}
+  .cta-box p{color:#c9d6d3;font-size:14px;margin-bottom:14px}
+  .btn{display:inline-block;background:var(--green);color:#1c2b0c;font-family:'Manrope',sans-serif;font-weight:800;font-size:15px;text-decoration:none;padding:13px 26px;border-radius:11px;border:none;cursor:pointer}
+  .btn:hover{background:#b6d62f}
+  .restart{background:none;border:none;color:var(--slate);font-family:'IBM Plex Mono',monospace;font-size:12px;cursor:pointer;margin-top:16px;text-decoration:underline}
+  .phone{margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#bcd0cc}
+  footer{text-align:center;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--slate);margin-top:24px}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="brand"><div class="logo">АК</div>Альянс Консалтинг</div>
+  <a href="http://alyanskons.ru/">← на сайт</a>
+</div></header>
+
+<div class="wrap">
+  <div class="intro">
+    <div class="eyebrow">Тест · 1 минута</div>
+    <h1>Оштрафует ли вас РПН?</h1>
+    <p>5 вопросов о вашем предприятии — и узнаете уровень риска экологического штрафа.</p>
+  </div>
+
+  <div class="card" id="card"></div>
+</div>
+
+<footer>© Альянс Консалтинг · alyanskons.ru · +7 (812) 438-57-93</footer>
+
+<script>
+const Q = [
+  "Ваш объект поставлен на государственный учёт НВОС?",
+  "Сдаёте ли вы экологическую отчётность вовремя (2-ТП, плата за НВОС, ПЭК)?",
+  "Есть ли у вас проект санитарно-защитной зоны (если он требуется)?",
+  "Оформлены ли паспорта на отходы I–IV класса опасности?",
+  "Есть ли программа производственного экологического контроля (ПЭК) и ведётся ли он?"
+];
+// ответ: да=0, не знаю=1, нет=2
+const OPTS = [["Да","yes",0],["Не знаю","idk",1],["Нет","no",2]];
+let i=0, score=0;
+
+const card=document.getElementById("card");
+
+function renderQ(){
+  const pct=Math.round((i/Q.length)*100);
+  card.innerHTML = `
+    <div class="pbar"><i style="width:${Math.max(pct,6)}%"></i></div>
+    <div class="qnum">Вопрос ${i+1} из ${Q.length}</div>
+    <div class="qtext">${Q[i]}</div>
+    <div class="opts">
+      ${OPTS.map((o,k)=>`<button class="opt" data-v="${o[2]}"><b>${o[0]}</b></button>`).join("")}
+    </div>`;
+  card.querySelectorAll(".opt").forEach(b=>{
+    b.addEventListener("click",()=>{ score+=+b.dataset.v; i++; (i<Q.length)?renderQ():renderResult(); });
+  });
+}
+
+function renderResult(){
+  let band, color, title, text, tips;
+  if(score<=1){
+    band="Низкий риск"; color="#2E7D52";
+    title="Похоже, у вас порядок 👍";
+    text="По ответам серьёзных пробелов не видно. Это хороший знак — но требования меняются каждый год, поэтому стоит раз в год проверять документацию на актуальность.";
+    tips=["Следите за сроками отчётности 2026","Проверяйте обновления форм (НВОС, ПЭК)","Раз в год — аудит документации"];
+  } else if(score<=5){
+    band="Средний риск"; color="#C7891F";
+    title="Есть пробелы, которые лучше закрыть";
+    text="По части пунктов нет уверенности или документов. Это типичная ситуация — и именно по таким пробелам чаще всего приходят предписания и штрафы. Разберём, что именно нужно оформить.";
+    tips=["Уточнить категорию НВОС и учёт","Проверить, какие отчёты обязательны","Закрыть недостающие документы до проверки"];
+  } else {
+    band="Высокий риск"; color="#BD4A30";
+    title="Риск штрафа высокий — стоит действовать";
+    text="По ответам не хватает базовых документов. Штрафы по экологии для юрлиц доходят до 100 000–250 000 ₽ за статью, и с 2024 года их выписывают даже без проверки. Лучше разобраться сейчас, а не по предписанию.";
+    tips=["Срочно проверить учёт НВОС и отчётность","Оформить паспорта отходов и ПЭК","Бесплатная консультация — составим план"];
+  }
+  card.innerHTML = `
+    <div class="res">
+      <span class="res-badge" style="background:${color}">${band}</span>
+      <h2>${title}</h2>
+      <p>${text}</p>
+      <ul>${tips.map(t=>`<li>${t}</li>`).join("")}</ul>
+      <div class="score">Ваш результат: ${score} из 10 баллов риска</div>
+      <div class="cta-box">
+        <h3>Разберём вашу ситуацию бесплатно</h3>
+        <p>Проверим объект и скажем точно, что нужно оформить и в каком порядке.</p>
+        <a class="btn" href="http://alyanskons.ru/#contact">Получить консультацию</a>
+        <div class="phone">или звоните: +7 (812) 438-57-93</div>
+      </div>
+      <button class="restart" id="restart">↺ пройти заново</button>
+    </div>`;
+  document.getElementById("restart").addEventListener("click",()=>{ i=0;score=0;renderQ(); });
+}
+
+renderQ();
+</script>
+</body>
+</html>
