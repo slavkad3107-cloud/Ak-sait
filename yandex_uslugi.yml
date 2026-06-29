@@ -10,6 +10,7 @@
   <offer id="ak-szz">
     <name>Разработка проекта СЗЗ</name>
     <url>https://alyanskons.ru/szz.html</url>
+    <picture>https://alyanskons.ru/img/uslugi/ak-szz.png</picture>
     <price>40000</price>
     <currencyId>RUR</currencyId>
     <categoryId>1</categoryId>
@@ -18,6 +19,7 @@
   <offer id="ak-ndv">
     <name>Проект НДВ и инвентаризация выбросов</name>
     <url>https://alyanskons.ru/blog-ndv-inventarizaciya.html</url>
+    <picture>https://alyanskons.ru/img/uslugi/ak-ndv.png</picture>
     <price>40000</price>
     <currencyId>RUR</currencyId>
     <categoryId>1</categoryId>
@@ -26,6 +28,7 @@
   <offer id="ak-nvos">
     <name>Постановка объекта на учёт НВОС</name>
     <url>https://alyanskons.ru/blog-nvos-uchet.html</url>
+    <picture>https://alyanskons.ru/img/uslugi/ak-nvos.png</picture>
     <price>5000</price>
     <currencyId>RUR</currencyId>
     <categoryId>1</categoryId>
@@ -34,6 +37,7 @@
   <offer id="ak-otchet">
     <name>Экологическая отчётность</name>
     <url>https://alyanskons.ru/otchetnost.html</url>
+    <picture>https://alyanskons.ru/img/uslugi/ak-otchet.png</picture>
     <price>15000</price>
     <currencyId>RUR</currencyId>
     <categoryId>1</categoryId>
@@ -42,6 +46,7 @@
   <offer id="ak-oos">
     <name>Раздел ООС (ПМООС) для экспертизы</name>
     <url>https://alyanskons.ru/blog-oos-pp87.html</url>
+    <picture>https://alyanskons.ru/img/uslugi/ak-oos.png</picture>
     <price>40000</price>
     <currencyId>RUR</currencyId>
     <categoryId>1</categoryId>
@@ -50,6 +55,7 @@
   <offer id="ak-iei">
     <name>Инженерно-экологические изыскания (ИЭИ)</name>
     <url>https://alyanskons.ru/izyskaniya.html</url>
+    <picture>https://alyanskons.ru/img/uslugi/ak-iei.png</picture>
     <price>30000</price>
     <currencyId>RUR</currencyId>
     <categoryId>1</categoryId>
@@ -58,6 +64,7 @@
   <offer id="ak-audit">
     <name>Экологический аудит предприятия</name>
     <url>https://alyanskons.ru/blog-ekologicheskiy-audit.html</url>
+    <picture>https://alyanskons.ru/img/uslugi/ak-audit.png</picture>
     <price>30000</price>
     <currencyId>RUR</currencyId>
     <categoryId>1</categoryId>
@@ -66,6 +73,7 @@
   <offer id="ak-les">
     <name>Проект освоения лесов и план ЛРН</name>
     <url>https://alyanskons.ru/</url>
+    <picture>https://alyanskons.ru/img/uslugi/ak-les.png</picture>
     <price>30000</price>
     <currencyId>RUR</currencyId>
     <categoryId>1</categoryId>
@@ -74,6 +82,7 @@
   <offer id="ak-autsors">
     <name>Экологический аутсорсинг</name>
     <url>https://alyanskons.ru/autsors.html</url>
+    <picture>https://alyanskons.ru/img/uslugi/ak-autsors.png</picture>
     <currencyId>RUR</currencyId>
     <categoryId>1</categoryId>
     <description>Постоянное экологическое сопровождение предприятия: отчётность в срок, журналы, паспорта отходов, ПЭК, сопровождение проверок. Дешевле штата.</description>
@@ -81,6 +90,7 @@
   <offer id="ak-consult">
     <name>Бесплатная консультация эколога</name>
     <url>https://alyanskons.ru/#contact</url>
+    <picture>https://alyanskons.ru/img/uslugi/ak-consult.png</picture>
     <currencyId>RUR</currencyId>
     <categoryId>1</categoryId>
     <description>Разберём бесплатно: какая документация обязательна по вашему объекту, какие риски штрафов, с чего начать. Ответим в течение часа.</description>
