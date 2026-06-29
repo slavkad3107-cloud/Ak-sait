@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2026-06-29 12:00">
+  <shop>
+    <name>Альянс Консалтинг</name>
+    <company>ООО «Альянс Консалтинг»</company>
+    <url>https://alyanskons.ru</url>
+    <currencies><currency id="RUR" rate="1"/></currencies>
+    <categories><category id="1">Экологические услуги</category></categories>
+    <offers>
+  <offer id="ak-szz">
+    <name>Разработка проекта СЗЗ</name>
+    <url>https://alyanskons.ru/szz.html</url>
+    <price>40000</price>
+    <currencyId>RUR</currencyId>
+    <categoryId>1</categoryId>
+    <description>Проект санитарно-защитной зоны для производств, складов, котельных: инвентаризация источников, расчёты рассеивания и шума, сопровождение в Роспотребнадзоре до установления зоны.</description>
+  </offer>
+  <offer id="ak-ndv">
+    <name>Проект НДВ и инвентаризация выбросов</name>
+    <url>https://alyanskons.ru/blog-ndv-inventarizaciya.html</url>
+    <price>40000</price>
+    <currencyId>RUR</currencyId>
+    <categoryId>1</categoryId>
+    <description>Инвентаризация выбросов, проект нормативов допустимых выбросов (НДВ), план мероприятий при НМУ. Лицензионное ПО УПРЗА «Эколог».</description>
+  </offer>
+  <offer id="ak-nvos">
+    <name>Постановка объекта на учёт НВОС</name>
+    <url>https://alyanskons.ru/blog-nvos-uchet.html</url>
+    <price>5000</price>
+    <currencyId>RUR</currencyId>
+    <categoryId>1</categoryId>
+    <description>Постановка объекта на государственный учёт, определение категории I–IV, подготовка заявки под ключ. Без учёта — штраф до 100 000 ₽ (ст. 8.46 КоАП).</description>
+  </offer>
+  <offer id="ak-otchet">
+    <name>Экологическая отчётность</name>
+    <url>https://alyanskons.ru/otchetnost.html</url>
+    <price>15000</price>
+    <currencyId>RUR</currencyId>
+    <categoryId>1</categoryId>
+    <description>Декларация о плате за НВОС, 2-ТП (отходы), отчёт о движении отходов, кадастр отходов, отчёт по ПЭК. Берём сроки на себя — без штрафов за просрочку.</description>
+  </offer>
+  <offer id="ak-oos">
+    <name>Раздел ООС (ПМООС) для экспертизы</name>
+    <url>https://alyanskons.ru/blog-oos-pp87.html</url>
+    <price>40000</price>
+    <currencyId>RUR</currencyId>
+    <categoryId>1</categoryId>
+    <description>Раздел ООС/ПМООС по ПП № 87, проекты рекультивации, ОВОС. Сопровождаем экспертизу до положительного заключения, напрямую и на субподряде.</description>
+  </offer>
+  <offer id="ak-iei">
+    <name>Инженерно-экологические изыскания (ИЭИ)</name>
+    <url>https://alyanskons.ru/izyskaniya.html</url>
+    <price>30000</price>
+    <currencyId>RUR</currencyId>
+    <categoryId>1</categoryId>
+    <description>Обследование территории, отбор и лабораторный анализ проб, оценка компонентов среды, отчёт. Договор с аккредитованной лабораторией.</description>
+  </offer>
+  <offer id="ak-audit">
+    <name>Экологический аудит предприятия</name>
+    <url>https://alyanskons.ru/blog-ekologicheskiy-audit.html</url>
+    <price>30000</price>
+    <currencyId>RUR</currencyId>
+    <categoryId>1</categoryId>
+    <description>Оценка документации и рисков штрафов, план приведения в порядок. Полезно перед проверкой Росприроднадзора и при покупке актива. Первичная оценка бесплатно.</description>
+  </offer>
+  <offer id="ak-les">
+    <name>Проект освоения лесов и план ЛРН</name>
+    <url>https://alyanskons.ru/</url>
+    <price>30000</price>
+    <currencyId>RUR</currencyId>
+    <categoryId>1</categoryId>
+    <description>Проект освоения лесов и планы по предупреждению и ликвидации разливов нефти и нефтепродуктов (ЛРН).</description>
+  </offer>
+  <offer id="ak-autsors">
+    <name>Экологический аутсорсинг</name>
+    <url>https://alyanskons.ru/autsors.html</url>
+    <currencyId>RUR</currencyId>
+    <categoryId>1</categoryId>
+    <description>Постоянное экологическое сопровождение предприятия: отчётность в срок, журналы, паспорта отходов, ПЭК, сопровождение проверок. Дешевле штата.</description>
+  </offer>
+  <offer id="ak-consult">
+    <name>Бесплатная консультация эколога</name>
+    <url>https://alyanskons.ru/#contact</url>
+    <currencyId>RUR</currencyId>
+    <categoryId>1</categoryId>
+    <description>Разберём бесплатно: какая документация обязательна по вашему объекту, какие риски штрафов, с чего начать. Ответим в течение часа.</description>
+  </offer>
+    </offers>
+  </shop>
+</yml_catalog>
