@@ -83,6 +83,7 @@
     <name>Экологический аутсорсинг</name>
     <url>https://alyanskons.ru/autsors.html</url>
     <picture>https://alyanskons.ru/img/uslugi/ak-autsors.png</picture>
+    <price>10000</price>
     <currencyId>RUR</currencyId>
     <categoryId>1</categoryId>
     <description>Постоянное экологическое сопровождение предприятия: отчётность в срок, журналы, паспорта отходов, ПЭК, сопровождение проверок. Дешевле штата.</description>
@@ -91,6 +92,7 @@
     <name>Бесплатная консультация эколога</name>
     <url>https://alyanskons.ru/#contact</url>
     <picture>https://alyanskons.ru/img/uslugi/ak-consult.png</picture>
+    <price>0</price>
     <currencyId>RUR</currencyId>
     <categoryId>1</categoryId>
     <description>Разберём бесплатно: какая документация обязательна по вашему объекту, какие риски штрафов, с чего начать. Ответим в течение часа.</description>
