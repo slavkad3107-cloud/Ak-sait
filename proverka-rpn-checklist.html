@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Чек-лист: готов ли ваш объект к проверке Росприроднадзора — Альянс Консалтинг</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate" type="application/rss+xml" title="Альянс Консалтинг — статьи" href="/rss.xml">
+<link rel="icon" type="image/png" sizes="180x180" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#103A42">
+<meta name="description" content="Интерактивный чек-лист самопроверки: готов ли ваш объект к проверке Росприроднадзора. 18 пунктов по учёту НВОС, разрешениям, отчётности, плате, отходам и СЗЗ. Оцените риски за 5 минут.">
+<link rel="canonical" href="https://alyanskons.ru/proverka-rpn-checklist.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Чек-лист: готов ли ваш объект к проверке Росприроднадзора">
+<meta property="og:description" content="18 пунктов самопроверки по экологическим требованиям. Отметьте галочки — и узнайте уровень готовности и риски прямо на странице.">
+<meta property="og:url" content="https://alyanskons.ru/proverka-rpn-checklist.html">
+<meta property="og:image" content="https://alyanskons.ru/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<style>
+  :root{--brand:#21808F;--ink:#103A42;--petrol:#155561;--green:#A8C725;--green-d:#6F8C12;--paper:#F4F5F1;--line:#E3E6DF;--slate:#5C6F6A;--red:#BD4A30}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.7}
+  .wrap{max-width:740px;margin:0 auto;padding:0 20px}
+  header.top{background:var(--ink);color:#fff;padding:15px 0}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:14px;font-family:'Manrope',sans-serif}
+  .logo{width:34px;height:34px;border-radius:8px;background:var(--brand);display:grid;place-items:center;font-weight:800;font-family:'IBM Plex Mono',monospace;color:#fff;font-size:13px}
+  .top a{color:#bcd0cc;text-decoration:none;font-size:13px;font-family:'IBM Plex Mono',monospace}
+  .top a:hover{color:#fff}
+  article{padding:40px 0 20px}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--green-d);letter-spacing:.06em;text-transform:uppercase}
+  h1{font-family:'Manrope',sans-serif;font-weight:800;font-size:32px;line-height:1.2;margin:10px 0 12px;color:var(--ink)}
+  .meta{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--slate);margin-bottom:24px}
+  article h2{font-family:'Manrope',sans-serif;font-weight:800;font-size:21px;margin:30px 0 10px;color:var(--petrol)}
+  article p{margin:12px 0;font-size:16px}
+  article ul{margin:12px 0 12px 22px}
+  article li{margin:7px 0;font-size:16px}
+  .lead{font-size:18px;color:#2a4248}
+  .box-note{background:#fff;border:1px solid var(--line);border-left:3px solid var(--green);border-radius:10px;padding:14px 18px;margin:18px 0;font-size:15px}
+  .cta{background:var(--ink);color:#fff;border-radius:18px;padding:28px;margin:34px 0 10px;text-align:center}
+  .cta h3{font-family:'Manrope',sans-serif;font-weight:800;font-size:22px;margin-bottom:8px}
+  .cta p{color:#c9d6d3;font-size:15px;margin-bottom:16px}
+  .btn{display:inline-block;background:var(--green);color:#1c2b0c;font-family:'Manrope',sans-serif;font-weight:800;font-size:15px;text-decoration:none;padding:13px 26px;border-radius:11px}
+  .btn:hover{background:#b6d62f}
+  .phone{margin-top:12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#bcd0cc}
+  footer{border-top:1px solid var(--line);padding:22px 0;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--slate);margin-top:20px}
+  /* checklist */
+  .ck-block{background:#fff;border:1px solid var(--line);border-radius:14px;padding:6px 20px 16px;margin:16px 0}
+  .ck-block h2{font-size:18px;margin:18px 0 6px;color:var(--petrol)}
+  .ck-item{display:block;padding:11px 0;border-bottom:1px solid var(--line)}
+  .ck-item:last-child{border-bottom:none}
+  .ck-item label{display:flex;align-items:flex-start;gap:11px;cursor:pointer;font-size:15.5px;font-weight:600;color:var(--ink)}
+  .ck-item input{margin-top:5px;width:18px;height:18px;flex:0 0 auto;accent-color:var(--brand);cursor:pointer}
+  .ck-risk{margin:4px 0 0 29px;font-size:13.5px;color:var(--slate);line-height:1.55}
+  .ck-risk b{color:var(--red);font-weight:600}
+  #result{position:sticky;bottom:0;z-index:5;background:var(--ink);color:#fff;border-radius:16px 16px 0 0;padding:18px 22px;margin-top:24px;box-shadow:0 -6px 24px rgba(16,58,66,.18)}
+  #result .score{font-family:'Manrope',sans-serif;font-weight:800;font-size:22px}
+  #result .bar{height:9px;background:rgba(255,255,255,.18);border-radius:6px;margin:10px 0;overflow:hidden}
+  #result .bar i{display:block;height:100%;width:0;background:var(--green);border-radius:6px;transition:width .3s ease}
+  #result .verdict{font-size:14.5px;color:#dbe6e3}
+  #result .verdict b{color:#fff}
+</style>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(110164410,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/110164410" style="position:absolute;left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="brand"><div class="logo">АК</div>Альянс Консалтинг</div>
+  <a href="https://alyanskons.ru/">← на сайт</a>
+</div></header>
+
+<div class="wrap"><article>
+  <div class="eyebrow">Лид-магнит · Самопроверка</div>
+  <nav aria-label="breadcrumb" style="font-size:13px;color:#5C6F6A;margin:0 0 14px;font-family:'Inter',-apple-system,sans-serif"><a href="/" style="color:#21808F;text-decoration:none">Главная</a> › <a href="/#blog" style="color:#21808F;text-decoration:none">Блог</a> › <span style="color:#5C6F6A">Чек-лист готовности к проверке РПН</span></nav>
+<h1>Чек-лист: готов ли ваш объект к проверке Росприроднадзора</h1>
+  <div class="meta">Альянс Консалтинг · экологический консалтинг в СПб и ЛО</div>
+
+  <p class="lead">Плановая или внеплановая проверка Росприроднадзора начинается с запроса документов. Если их нет или они просрочены — предписания и штрафы почти неизбежны. Пройдите быструю самопроверку: отметьте пункты, которые у вас закрыты, и страница сама подсчитает уровень готовности и подсветит зоны риска.</p>
+  <div class="box-note">Отмечайте галочкой только то, что у вас реально оформлено и актуально. Результат считается прямо в браузере — мы ничего не сохраняем и никуда не отправляем.</div>
+
+  <form id="checklist">
+
+    <div class="ck-block">
+      <h2>1. Постановка на учёт НВОС</h2>
+      <div class="ck-item"><label><input type="checkbox"> Объект поставлен на государственный учёт объектов НВОС, есть свидетельство с категорией (I–IV)</label>
+        <div class="ck-risk">Если нет: <b>штраф по ст. 8.46 КоАП</b> до 100 тыс. руб. на юрлицо за отсутствие постановки на учёт.</div></div>
+      <div class="ck-item"><label><input type="checkbox"> Категория объекта (I, II, III или IV) присвоена корректно и соответствует фактической деятельности</label>
+        <div class="ck-risk">Если нет: неверная категория тянет за собой неправильный набор отчётности и разрешений — риск претензий по всему пакету.</div></div>
+      <div class="ck-item"><label><input type="checkbox"> Сведения об объекте актуализированы при изменениях (новое оборудование, мощности, виды деятельности)</label>
+        <div class="ck-risk">Если нет: расхождение учётных данных с фактом — <b>основание для предписания</b> и повторной актуализации в сжатый срок.</div></div>
+    </div>
+
+    <div class="ck-block">
+      <h2>2. Разрешительная документация</h2>
+      <div class="ck-item"><label><input type="checkbox"> Есть инвентаризация источников выбросов и нормативы (НДВ / разрешение на выбросы или декларация — по категории)</label>
+        <div class="ck-risk">Если нет: выброс без нормативов — <b>ст. 8.21 КоАП</b>, штраф до 250 тыс. руб. и приостановка деятельности.</div></div>
+      <div class="ck-item"><label><input type="checkbox"> Оформлены НООЛР / нормативы образования отходов (для I–II категории) или они учтены в декларации/КЭР</label>
+        <div class="ck-risk">Если нет: размещение отходов без нормативов — административка и пересчёт платы с повышающими коэффициентами.</div></div>
+      <div class="ck-item"><label><input type="checkbox"> Для I категории получено или оформляется КЭР (комплексное экологическое разрешение)</label>
+        <div class="ck-risk">Если нет: работа объекта I категории без КЭР в установленный срок — <b>крупные штрафы</b> и предписание о приостановке.</div></div>
+      <div class="ck-item"><label><input type="checkbox"> Есть разрешительные документы по сбросам в водные объекты / канализацию (если применимо)</label>
+        <div class="ck-risk">Если нет: сброс без разрешения — ст. 8.14 КоАП, штрафы и предписания, вплоть до приостановки сброса.</div></div>
+    </div>
+
+    <div class="ck-block">
+      <h2>3. Отчётность и сроки</h2>
+      <div class="ck-item"><label><input type="checkbox"> Отчёт 2-ТП (отходы / воздух / водхоз) сдан в срок за прошлый год</label>
+        <div class="ck-risk">Если нет: непредставление статотчётности — <b>ст. 8.5 / 13.19 КоАП</b>, штраф и риск внеплановой проверки.</div></div>
+      <div class="ck-item"><label><input type="checkbox"> Сдан отчёт по программе ПЭК (для I–III категории) — до 25 марта</label>
+        <div class="ck-risk">Если нет: непредставление отчёта ПЭК — ст. 8.5 КоАП, штраф до 80–100 тыс. руб. на юрлицо.</div></div>
+      <div class="ck-item"><label><input type="checkbox"> Разработана и утверждена программа производственного экологического контроля (ПЭК)</label>
+        <div class="ck-risk">Если нет: отсутствие самой программы ПЭК — отдельное нарушение и почти гарантированное предписание.</div></div>
+      <div class="ck-item"><label><input type="checkbox"> Отчётность по экологическому сбору и декларация о количестве товаров/упаковки сданы (если вы производитель/импортёр)</label>
+        <div class="ck-risk">Если нет: штрафы за непредставление и доначисление экосбора в кратном размере.</div></div>
+    </div>
+
+    <div class="ck-block">
+      <h2>4. Плата за НВОС</h2>
+      <div class="ck-item"><label><input type="checkbox"> Декларация о плате за НВОС за прошлый год подана в срок — до 10 марта</label>
+        <div class="ck-risk">Если нет: <b>ст. 8.41 КоАП</b> — штраф до 100 тыс. руб. за невнесение платы в срок и непредставление декларации.</div></div>
+      <div class="ck-item"><label><input type="checkbox"> Плата за НВОС внесена полностью, авансовые платежи уплачены поквартально</label>
+        <div class="ck-risk">Если нет: пени на задолженность и административная ответственность за нарушение сроков платы.</div></div>
+    </div>
+
+    <div class="ck-block">
+      <h2>5. Отходы</h2>
+      <div class="ck-item"><label><input type="checkbox"> На все образующиеся отходы I–IV класса опасности оформлены паспорта</label>
+        <div class="ck-risk">Если нет: обращение с отходами без паспортов — <b>ст. 8.2 КоАП</b>, штраф до 250 тыс. руб. на юрлицо.</div></div>
+      <div class="ck-item"><label><input type="checkbox"> Отходы передаются только лицензированным организациям, договоры и акты в наличии</label>
+        <div class="ck-risk">Если нет: передача отходов без лицензии у подрядчика — ответственность ложится и на вас, риск крупного штрафа.</div></div>
+      <div class="ck-item"><label><input type="checkbox"> Ведётся учёт в области обращения с отходами (журналы движения отходов)</label>
+        <div class="ck-risk">Если нет: отсутствие учёта — нарушение порядка ведения учёта, предписание и штраф.</div></div>
+    </div>
+
+    <div class="ck-block">
+      <h2>6. СЗЗ</h2>
+      <div class="ck-item"><label><input type="checkbox"> Для объекта установлена санитарно-защитная зона (проект СЗЗ согласован, решение получено)</label>
+        <div class="ck-risk">Если нет: отсутствие установленной СЗЗ при наличии жилья рядом — претензии Роспотребнадзора и жалобы жителей. <a href="blog-szz.html" style="color:#21808F;text-decoration:none;font-weight:600">Что такое СЗЗ →</a></div></div>
+    </div>
+
+    <div class="ck-block">
+      <h2>7. Соответствие фактов документам</h2>
+      <div class="ck-item"><label><input type="checkbox"> Фактические источники, оборудование и виды отходов совпадают с тем, что указано в документах</label>
+        <div class="ck-risk">Если нет: расхождение «бумаги и факта» — <b>самая частая находка инспектора</b>, влечёт каскад предписаний.</div></div>
+      <div class="ck-item"><label><input type="checkbox"> Назначен ответственный за экологию, есть подтверждение обучения / профподготовки</label>
+        <div class="ck-risk">Если нет: отсутствие обученного ответственного — отдельное нарушение и слабое место при проверке.</div></div>
+    </div>
+
+  </form>
+
+  <div id="result" aria-live="polite">
+    <div class="score" id="scoreText">Готовность: 0 из 18</div>
+    <div class="bar"><i id="scoreBar"></i></div>
+    <div class="verdict" id="verdictText">Отметьте пункты выше, чтобы оценить готовность к проверке.</div>
+  </div>
+
+  <div class="box-note" style="border-left-color:#21808F"><b>Хотите снять эти задачи с себя?</b> → <a href="ekologicheskaya-otchetnost-pod-klyuch.html" style="color:#21808F;font-weight:700;text-decoration:none">Экологическая отчётность под ключ</a></div>
+
+  <div class="cta">
+    <h3>Проверим объект и закроем пробелы</h3>
+    <p>Проведём экспресс-аудит документов, скажем, что именно спросит инспектор, и оформим недостающее — учёт НВОС, нормативы, отчётность, паспорта отходов, СЗЗ. Первая консультация бесплатна.</p>
+    <a class="btn" href="https://alyanskons.ru/#contact">Получить бесплатную консультацию</a>
+    <div class="phone">или звоните: +7 (812) 438-57-93</div>
+  </div>
+</article></div>
+
+<section style="max-width:760px;margin:36px auto 0;padding:0 20px"><h2 style="font-family:'Manrope',-apple-system,sans-serif;font-weight:800;font-size:20px;color:#155561;margin:0 0 14px">Читайте также</h2><div style="display:grid;gap:10px"><a href="blog-shtrafy-ekologiya-2026.html" style="display:block;background:#fff;border:1px solid #E3E6DF;border-radius:10px;padding:13px 16px;text-decoration:none;color:#103A42;font-weight:600;font-size:15px">Экологические штрафы в 2026 году: за что и сколько →</a><a href="ekologicheskaya-otchetnost-pod-klyuch.html" style="display:block;background:#fff;border:1px solid #E3E6DF;border-radius:10px;padding:13px 16px;text-decoration:none;color:#103A42;font-weight:600;font-size:15px">Экологическая отчётность под ключ →</a><a href="blog-szz.html" style="display:block;background:#fff;border:1px solid #E3E6DF;border-radius:10px;padding:13px 16px;text-decoration:none;color:#103A42;font-weight:600;font-size:15px">Что такое СЗЗ и кому она нужна →</a></div></section>
+
+<script>
+(function(){
+  var form = document.getElementById('checklist');
+  var boxes = form.querySelectorAll('input[type="checkbox"]');
+  var total = boxes.length;
+  var scoreText = document.getElementById('scoreText');
+  var scoreBar = document.getElementById('scoreBar');
+  var verdictText = document.getElementById('verdictText');
+  function update(){
+    var n = 0;
+    for (var i=0;i<boxes.length;i++){ if(boxes[i].checked) n++; }
+    var pct = total ? Math.round(n/total*100) : 0;
+    scoreText.textContent = 'Готовность: ' + n + ' из ' + total + ' (' + pct + '%)';
+    scoreBar.style.width = pct + '%';
+    var v, color;
+    if (pct < 60){
+      v = '<b>Высокий риск.</b> Закрыто меньше 60% требований — при проверке велика вероятность предписаний и штрафов. Стоит срочно закрыть пробелы.';
+      color = '#BD4A30';
+    } else if (pct < 85){
+      v = '<b>Есть пробелы.</b> Основа закрыта, но остаются уязвимые места, по которым инспектор может выписать предписание. Рекомендуем точечно их устранить.';
+      color = '#A8C725';
+    } else {
+      v = '<b>В целом порядок.</b> Большинство требований выполнено. Проверьте оставшиеся пункты и держите документы актуальными.';
+      color = '#A8C725';
+    }
+    verdictText.innerHTML = v;
+    scoreBar.style.background = color;
+  }
+  for (var i=0;i<boxes.length;i++){ boxes[i].addEventListener('change', update); }
+  update();
+})();
+</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Чек-лист: готов ли ваш объект к проверке Росприроднадзора", "description": "Интерактивный чек-лист самопроверки готовности объекта к проверке Росприроднадзора: учёт НВОС, разрешения, отчётность, плата за НВОС, отходы, СЗЗ.", "url": "https://alyanskons.ru/proverka-rpn-checklist.html", "inLanguage": "ru-RU", "publisher": {"@type": "Organization", "name": "ООО «Альянс Консалтинг»", "logo": {"@type": "ImageObject", "url": "https://alyanskons.ru/apple-touch-icon.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alyanskons.ru/"}, {"@type": "ListItem", "position": 2, "name": "Блог", "item": "https://alyanskons.ru/#blog"}, {"@type": "ListItem", "position": 3, "name": "Чек-лист готовности к проверке РПН", "item": "https://alyanskons.ru/proverka-rpn-checklist.html"}]}</script>
+<footer style="background:#103A42;color:#cfdedb;padding:30px 20px;margin-top:34px;font-family:'Inter',-apple-system,'Segoe UI',Roboto,Arial,sans-serif"><div style="max-width:860px;margin:0 auto;text-align:center"><nav style="display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center;font-size:14px;margin-bottom:14px"><a href="https://alyanskons.ru/" style="color:#cfdedb;text-decoration:none">Главная</a><a href="https://alyanskons.ru/szz.html" style="color:#cfdedb;text-decoration:none">СЗЗ</a><a href="https://alyanskons.ru/otchetnost.html" style="color:#cfdedb;text-decoration:none">Отчётность</a><a href="https://alyanskons.ru/#services" style="color:#cfdedb;text-decoration:none">Услуги</a><a href="https://alyanskons.ru/#blog" style="color:#cfdedb;text-decoration:none">Статьи</a><a href="https://alyanskons.ru/uroki.html" style="color:#cfdedb;text-decoration:none">Уроки</a><a href="https://alyanskons.ru/test-rpn.html" style="color:#cfdedb;text-decoration:none">Тест РПН</a><a href="https://alyanskons.ru/#contact" style="color:#cfdedb;text-decoration:none">Контакты</a></nav><div style="display:flex;gap:14px;justify-content:center;align-items:center;flex-wrap:wrap;font-size:14px;margin-bottom:14px"><a href="https://t.me/alyanskons" target="_blank" rel="noopener" style="color:#A8C725;text-decoration:none;font-weight:600">Telegram</a><a href="https://vk.com/alyanskonsalt" target="_blank" rel="noopener" style="color:#A8C725;text-decoration:none;font-weight:600">ВКонтакте</a><a href="https://max.ru/id782516666609_biz2" target="_blank" rel="noopener" style="color:#A8C725;text-decoration:none;font-weight:600">MAX</a><a href="https://www.avito.ru/brands/45d7ea6979b2070cfeefb4c7d67bf8e8" target="_blank" rel="noopener" style="color:#A8C725;text-decoration:none;font-weight:600">Avito</a></div><div style="font-size:13px;color:#8aa39e;line-height:1.7"><a href="tel:+78124385793" style="color:#cfdedb;text-decoration:none">+7 (812) 438-57-93</a> · <a href="mailto:alyanskonsalt@mail.ru" style="color:#cfdedb;text-decoration:none">alyanskonsalt@mail.ru</a> · СПб, пр. Большевиков, 7к3<br>© 2026 ООО «Альянс Консалтинг» · Экология · Проектирование · Сопровождение</div></div></footer>
+</body>
+</html>
