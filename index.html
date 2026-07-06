@@ -59,8 +59,15 @@
   .brand .mark{height:34px;width:auto;flex:none}
   .brand small{display:block;font-family:var(--font-mono);font-weight:400;font-size:9.5px;letter-spacing:.16em;color:var(--slate);text-transform:uppercase;margin-top:1px}
   .nav-links{display:flex;align-items:center;gap:24px}
-  .nav-links a{font-size:14.5px;font-weight:500;color:var(--ink);opacity:.78;transition:opacity .2s}
-  .nav-links a:hover{opacity:1}
+  .nav-links>a,.dd-top{font-size:14.5px;font-weight:500;color:var(--ink);opacity:.78;transition:opacity .2s}
+  .nav-links>a:hover,.dd-top:hover{opacity:1}
+  .has-dd{position:relative;display:flex;align-items:center}
+  .dd-top{cursor:pointer}
+  .dd{display:none;position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%);min-width:262px;background:var(--paper);border:1px solid var(--line);border-radius:13px;box-shadow:0 14px 34px rgba(16,58,66,.16);padding:8px;flex-direction:column;gap:1px;z-index:70}
+  .has-dd:hover>.dd{display:flex}
+  .dd::before{content:"";position:absolute;top:-10px;left:0;right:0;height:10px}
+  .dd a{font-size:13.7px;font-weight:500;color:var(--ink);opacity:.82;padding:8px 13px;border-radius:8px;white-space:nowrap}
+  .dd a:hover{background:#eef4f2;opacity:1}
   .nav-cta{display:flex;align-items:center;gap:14px}
   .nav-phone{font-family:var(--font-display);font-weight:700;font-size:15px;white-space:nowrap}
   .nav-phone:hover{color:var(--brand)}
@@ -245,7 +252,11 @@
     .nav-cta .btn-dark{display:none}
     .brand small{display:none}
     .nav-links.open{display:flex;position:absolute;top:70px;left:0;right:0;flex-direction:column;background:var(--paper);padding:18px 24px;gap:8px;border-bottom:1px solid var(--line);align-items:stretch;z-index:60}
-    .nav-links.open a{padding:11px 0;border-bottom:1px solid var(--line);opacity:1}
+    .nav-links.open>a,.nav-links.open .dd-top{padding:11px 0;border-bottom:1px solid var(--line);opacity:1}
+    .nav-links.open .has-dd{flex-direction:column;align-items:stretch}
+    .nav-links.open .dd{display:flex;position:static;transform:none;border:none;box-shadow:none;background:none;padding:4px 0 8px 16px;min-width:0}
+    .nav-links.open .dd a{border:none;padding:8px 0;font-size:14px}
+    .nav-links.open .dd-top{font-weight:700}
     .svc-grid,.pf-grid{grid-template-columns:repeat(2,1fr)}
     .proc{grid-template-columns:repeat(2,1fr);gap:30px 20px}
     .step::before{display:none}
@@ -341,10 +352,29 @@ ym(110164410,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     </a>
     <nav class="nav-links" id="navLinks">
       <a href="#check">Проверка</a>
-      <a href="#risk">Риски</a>
-      <a href="#services">Услуги</a>
+      <div class="has-dd">
+        <a href="#services" class="dd-top">Услуги ▾</a>
+        <div class="dd">
+          <a href="szz.html">Санитарно-защитные зоны</a>
+          <a href="otchetnost.html">Экологическая отчётность</a>
+          <a href="autsors.html">Эколог на аутсорсе</a>
+          <a href="izyskaniya.html">Инженерно-экологические изыскания</a>
+          <a href="zakaz-proekta-szz-spb.html">Проект СЗЗ — заказать в СПб</a>
+          <a href="ekologicheskaya-otchetnost-pod-klyuch.html">Экоотчётность под ключ</a>
+        </div>
+      </div>
+      <div class="has-dd">
+        <a href="#blog" class="dd-top">База знаний ▾</a>
+        <div class="dd">
+          <a href="uroki.html">Экология за 5 минут</a>
+          <a href="test-rpn.html">Тест: оштрафует ли РПН?</a>
+          <a href="proverka-rpn-checklist.html">Чек-лист проверки РПН</a>
+          <a href="keys-oos-opochka-dubrovka.html">Кейс: раздел ООС (75 замечаний)</a>
+          <a href="keys-rzd-porty-terminaly.html">Кейс: РЖД, порты, терминалы</a>
+          <a href="#blog">Все статьи блога →</a>
+        </div>
+      </div>
       <a href="#portfolio">Портфолио</a>
-      <a href="#team">Команда</a>
       <a href="#contact">Контакты</a>
     </nav>
     <div class="nav-cta">
