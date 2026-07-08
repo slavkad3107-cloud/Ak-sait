@@ -64,7 +64,7 @@
   .has-dd{position:relative;display:flex;align-items:center}
   .dd-top{cursor:pointer}
   .dd{display:none;position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%);min-width:262px;background:var(--paper);border:1px solid var(--line);border-radius:13px;box-shadow:0 14px 34px rgba(16,58,66,.16);padding:8px;flex-direction:column;gap:1px;z-index:70}
-  .has-dd:hover>.dd{display:flex}
+  .has-dd:hover>.dd,.has-dd:focus-within>.dd{display:flex}
   .dd::before{content:"";position:absolute;top:-10px;left:0;right:0;height:10px}
   .dd a{font-size:13.7px;font-weight:500;color:var(--ink);opacity:.82;padding:8px 13px;border-radius:8px;white-space:nowrap}
   .dd a:hover{background:#eef4f2;opacity:1}
