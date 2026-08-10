@@ -17,7 +17,12 @@ EXTRA = [  # (html-файл, обложка в img/dzen)
     ("blog-shtrafy-ekologiya-2026.html", "dzcover_shtrafy.png"),
     ("blog-otchetnost-2026.html",        "dzcover_otchetnost.png"),
     ("blog-ekologicheskiy-audit.html",   "dzcover_audit.png"),
+    ("blog-ker-2026.html",               "dzcover_ker.png"),
+    ("blog-ovos.html",                   "dzcover_ovos.png"),
 ]
+# Темы, которые выкладываются РУКАМИ в Дзен по графику (СДЕЛАТЬ по датам) — из фида исключаем,
+# иначе после импорта будет дубль и Дзен снова пометит «дублированный контент» (10.08: паспорта).
+EXCLUDE_TITLES = ("Паспорта отходов",)
 ALLOWED = ("p", "a", "b", "i", "u", "s", "h1", "h2", "h3", "h4",
            "blockquote", "ul", "ol", "li", "figure", "img", "figcaption", "br", "video", "source")
 
@@ -70,6 +75,7 @@ def parse_blog(fn):
     return title, desc, body
 
 items = parse_old()
+items = [i for i in items if not any(x in i["title"] for x in EXCLUDE_TITLES)]
 have_links = {i["link"] for i in items}
 for fn, cover in EXTRA:
     link = f"{SITE}/{fn}"
