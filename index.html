@@ -416,7 +416,7 @@ ym(110164410,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
         <div class="ci"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><div class="t">Телефон</div><a class="v" href="tel:+78124385793">+7 (812) 438-57-93</a></div></div>
         <div class="ci"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></div><div><div class="t">Эл. почта</div><a class="v" href="mailto:alyanskonsalt@mail.ru">alyanskonsalt@mail.ru</a></div></div>
         <div class="ci"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="t">Офис · Пн–Пт, 9:00–18:00</div><span class="v" style="display:block;font-size:16px;line-height:1.4">193231, Санкт-Петербург,<br>пр. Большевиков, д. 7, к. 3</span><div class="req">ООО «Альянс Консалтинг» · ИНН 7811751716 · ОГРН 1207800130504</div></div></div>
-        <div class="map-box" id="map2gis" role="region" aria-label="Карта 2ГИС: офис на пр. Большевиков, 7к3">Карта загрузится при прокрутке</div>
+        <div class="map-box" id="map2gis" role="region" aria-label="Яндекс.Карты: офис на пр. Большевиков, 7к3">Карта загрузится при прокрутке</div>
       </div>
       <div>
         <form class="lead-form reveal" id="leadForm" novalidate>
@@ -586,15 +586,17 @@ ym(110164410,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
     lb.addEventListener('click',function(e){if(e.target===lb)lb.close();});
   }
 
-  /* ---------- Карта 2ГИС: грузим только при прокрутке до неё ---------- */
+  /* ---------- Карта (Яндекс): грузим только при прокрутке до неё ---------- */
   var mapEl=document.getElementById('map2gis');
   function loadMap(){
     if(!mapEl||mapEl.dataset.loaded)return;mapEl.dataset.loaded='1';
     var c=[30.4767,59.9075];
-    var s=document.createElement('script');s.src='https://mapgl.2gis.com/api/js/v1';s.async=true;
-    s.onload=function(){try{mapEl.textContent='';var m=new mapgl.Map('map2gis',{center:c,zoom:16,key:'acd527aa-04e3-4f9c-83ae-0826a5f362bf'});new mapgl.Marker(m,{coordinates:c});}catch(e){mapEl.textContent='Карта не загрузилась: пр. Большевиков, д. 7, к. 3';}};
-    s.onerror=function(){mapEl.textContent='Карта не загрузилась: пр. Большевиков, д. 7, к. 3';};
-    document.body.appendChild(s);
+    /* 20.11.2026: 2ГИС заменена на Яндекс.Карты (ключ 2ГИС истёк; виджет Яндекса работает без ключа) */
+    var f=document.createElement('iframe');
+    f.src='https://yandex.ru/map-widget/v1/?ll='+c[0]+'%2C'+c[1]+'&z=16&pt='+c[0]+'%2C'+c[1]+'%2Cpm2rdm&l=map';
+    f.title='Яндекс.Карты: офис на пр. Большевиков, д. 7, к. 3';f.loading='lazy';f.allowFullscreen=true;
+    f.style.cssText='width:100%;height:100%;border:0;display:block';
+    mapEl.textContent='';mapEl.appendChild(f);
   }
   if(mapEl){
     if('IntersectionObserver' in window){
