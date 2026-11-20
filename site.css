@@ -79,7 +79,7 @@ a:hover{color:var(--primary-dark)}
 .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
 .sh-wrap{max-width:1200px;margin:0 auto;padding:0 20px;height:72px;display:flex;align-items:center;gap:18px}
 .sh-brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--text);flex:none;margin-right:auto}
-.sh-brand img{width:52px;height:auto;display:block}
+.sh-brand img{width:68px;height:auto;display:block;border-radius:6px}
 .sh-brand span{display:flex;flex-direction:column;font-family:var(--font-head);font-weight:800;font-size:16px;line-height:1.15;color:var(--text)}
 .sh-brand small{font-family:var(--font);font-weight:500;font-size:12px;color:var(--muted);letter-spacing:.01em;margin-top:2px}
 .sh-nav{display:flex;align-items:center;gap:4px}
@@ -98,7 +98,7 @@ a:hover{color:var(--primary-dark)}
 @media (max-width:640px){
   .sh-wrap{height:64px;gap:10px;padding:0 16px}
   .sh-nav{top:64px}
-  .sh-brand img{width:44px}
+  .sh-brand img{width:56px}
   .sh-brand span{font-size:14px}
   .sh-brand small{font-size:11px}
   .sh-phone{display:none}
