@@ -116,7 +116,7 @@ feed = f"""<?xml version="1.0" encoding="UTF-8"?>
      xmlns:atom="http://www.w3.org/2005/Atom"
      xmlns:georss="http://www.georss.org/georss">
   <channel>
-    <title>Экология для чайников</title>
+    <title>Статьи о природе и экологии</title>
     <link>{SITE}/</link>
     <description>Просто и по делу про экологию предприятия: отчётность, СЗЗ, НВОС, штрафы и как их избежать.</description>
     <language>ru</language>
