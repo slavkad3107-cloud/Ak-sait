@@ -461,3 +461,8 @@ header.top{display:none}
 .js .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}
 .js .reveal.in{opacity:1;transform:none}
 @media (max-width:640px){.section{padding:54px 0}.quiz,.lead-form,.hero-card{padding:22px 18px}.container{padding:0 16px}}
+
+/* 24.11.2026: фирменный знак АК от дизайнеров (2023), бирюзовый, прозрачный фон */
+.sh-brand img{width:auto;height:44px;border-radius:0}
+@media (max-width:960px){.sh-brand img{width:auto;height:36px}}
+.sf-brand img{width:auto;height:56px;border-radius:0}
