@@ -525,3 +525,22 @@ header.top{display:none}
     #eaf6f6 !important}
 }
 @media (max-width:640px){.home-hero{background:#fff !important}}
+
+/* 24.11.2026 черновик: вместо голого белого — светло-бирюзовые полосы и роботы бледным фоном в некоторых разделах */
+.section.soft{background:#eef7f7}
+/* экспресс-проверка: робот с планшетом справа, бледно */
+#check{background:
+    linear-gradient(90deg,#eef7f7 0%,rgba(238,247,247,.97) 45%,rgba(238,247,247,.78) 70%,rgba(238,247,247,.55) 100%),
+    url(img/robots/bg-check.webp) right center/cover no-repeat,#eef7f7}
+/* процесс: робот на объекте слева, бледно */
+#process{background:
+    linear-gradient(270deg,#fff 0%,rgba(255,255,255,.96) 50%,rgba(255,255,255,.80) 78%,rgba(255,255,255,.62) 100%),
+    url(img/robots/bg-process.webp) left center/auto 115% no-repeat,#fff}
+/* заявка: робот справа, бледно */
+#contact{background:
+    linear-gradient(90deg,#fff 0%,rgba(255,255,255,.97) 50%,rgba(255,255,255,.82) 78%,rgba(255,255,255,.66) 100%),
+    url(img/robots/bg-contact.webp) right center/auto 110% no-repeat,#fff}
+@media (max-width:960px){
+  #check,#process,#contact{background-size:auto,cover}
+  #check{background-color:#eef7f7}
+}
