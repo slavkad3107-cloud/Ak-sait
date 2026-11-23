@@ -512,3 +512,16 @@ header.top{display:none}
   .hero-robot-m{display:block;height:230px;margin:0 0 16px;border-radius:22px;
     background:url(img/robots/hero-robot-left.webp) 20% 30%/cover no-repeat}
 }
+
+/* вариант «прямо задним фоном»: картинка на весь первый экран, справа лишь лёгкая светлая дымка под текстом */
+.home-hero{background:
+    linear-gradient(270deg,rgba(255,255,255,.80) 0%,rgba(255,255,255,.62) 42%,rgba(255,255,255,0) 66%),
+    url(img/robots/hero-robot-left.webp) left center/cover no-repeat,
+    #eaf6f6 !important}
+@media (max-width:960px) and (min-width:641px){
+  .home-hero{background:
+    linear-gradient(270deg,rgba(255,255,255,.84) 0%,rgba(255,255,255,.66) 50%,rgba(255,255,255,0) 72%),
+    url(img/robots/hero-robot-left.webp) -230px bottom/auto 100% no-repeat,
+    #eaf6f6 !important}
+}
+@media (max-width:640px){.home-hero{background:#fff !important}}
