@@ -497,9 +497,10 @@ header.top{display:none}
 @media (max-width:960px) and (min-width:641px){
   .home-hero{min-height:560px;display:flex;align-items:center;
     background:
-      linear-gradient(270deg,#fff 0%,rgba(255,255,255,.96) 42%,rgba(255,255,255,.7) 56%,rgba(255,255,255,0) 74%),
-      url(img/robots/hero-robot-left.webp) 18% center/cover no-repeat,
-      #eaf6f6}
+      linear-gradient(270deg,#fff 0%,rgba(255,255,255,.96) 50%,rgba(255,255,255,.6) 62%,rgba(255,255,255,0) 76%),
+      linear-gradient(180deg,rgba(255,255,255,0) 0,rgba(255,255,255,0) 460px,#fff 540px),
+      url(img/robots/hero-robot-left.webp) -70px 0/auto 540px no-repeat,
+      #fff}
   .home-hero .hero-grid{grid-template-columns:38% 1fr}
   .home-hero .hero-grid > div:first-child{grid-column:2}
   .home-hero .hero-stats{grid-template-columns:1fr 1fr}
