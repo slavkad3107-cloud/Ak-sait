@@ -492,13 +492,20 @@ header.top{display:none}
 /* заголовки в цвете старого сайта */
 .section h2,.home-hero h1{color:#074952}
 
-/* узкий экран (окно приложения, планшет, телефон): робот отдельной картинкой НАД текстом, текст на белом */
+/* средний экран (окно приложения, планшет): робот СБОКУ слева отдельной колонкой, текст справа на белом */
 .hero-robot-m{display:none}
 @media (max-width:960px){
   .home-hero{min-height:0;display:block;background:#fff}
+  .home-hero .hero-grid > div:first-child{grid-column:auto;
+    display:grid;grid-template-columns:38% 1fr;column-gap:22px;align-content:start}
   .home-hero .hero-grid{grid-template-columns:1fr}
-  .home-hero .hero-grid > div:first-child{grid-column:1}
-  .hero-robot-m{display:block;height:300px;margin:0 0 18px;border-radius:22px;
-    background:url(img/robots/hero-robot-left.webp) 22% 30%/cover no-repeat}
+  .home-hero .hero-grid > div:first-child > *{grid-column:2}
+  .hero-robot-m{display:block;grid-column:1 !important;grid-row:1 / span 6;align-self:stretch;min-height:420px;border-radius:22px;
+    background:url(img/robots/hero-robot-left.webp) 20% 30%/cover no-repeat}
+  .home-hero .hero-grid > div:first-child > .hero-stats{grid-column:1 / -1}
 }
-@media (max-width:640px){.hero-robot-m{height:220px}}
+/* телефон: робот сверху, текст ниже */
+@media (max-width:640px){
+  .home-hero .hero-grid > div:first-child{display:block}
+  .hero-robot-m{min-height:0;height:230px;margin:0 0 16px}
+}
