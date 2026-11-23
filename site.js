@@ -33,3 +33,17 @@
     }
   }
 })();
+
+/* плашка cookie: сайт использует Яндекс.Метрику */
+(function () {
+  var KEY = 'ak-cookie-ok';
+  try { if (localStorage.getItem(KEY)) return; } catch (e) {}
+  function show() {
+    var d = document.createElement('div');
+    d.className = 'ak-cookie'; d.setAttribute('role', 'region'); d.setAttribute('aria-label', 'Уведомление о cookie');
+    d.innerHTML = '<p>Мы используем cookie и Яндекс.Метрику, чтобы сайт работал и становился удобнее. Продолжая пользоваться сайтом, вы соглашаетесь с <a href="/privacy.html">политикой обработки данных</a>.</p><button type="button" class="btn btn-sm">Понятно</button>';
+    d.querySelector('button').onclick = function () { try { localStorage.setItem(KEY, '1'); } catch (e) {} d.remove(); };
+    document.body.appendChild(d);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', show); else show();
+})();

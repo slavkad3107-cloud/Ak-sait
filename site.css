@@ -539,3 +539,11 @@ header.top{display:none}
   #check,#process{background-size:auto,cover}
   #check{background-color:#eef7f7}
 }
+
+/* доверие: цены в карточках, обещание у формы, плашка cookie */
+.svc .price{display:inline-block;align-self:flex-start;margin:0 0 10px;padding:4px 10px;border-radius:999px;background:var(--primary-50);color:var(--primary);font-weight:700;font-size:14px}
+.form-promise{margin:12px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+.ak-cookie{position:fixed;left:16px;bottom:16px;z-index:60;max-width:440px;display:flex;gap:14px;align-items:center;padding:14px 16px;border-radius:16px;background:#fff;box-shadow:0 10px 30px rgba(7,73,82,.18);border:1px solid #d9ecec}
+.ak-cookie p{margin:0;font-size:13.5px;line-height:1.45;color:#33494c}
+.ak-cookie .btn{flex:none}
+@media (max-width:640px){.ak-cookie{left:10px;right:10px;bottom:10px;max-width:none}}
