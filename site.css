@@ -484,7 +484,6 @@ header.top{display:none}
 .otr img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
 .otr figcaption{padding:12px 10px 14px;font-weight:600;color:#074952;line-height:1.3}
 #zachem-audit .card h3{color:#074952}
-.sf-robot{display:block;width:100%;max-width:220px;height:auto;margin-top:14px;border-radius:12px;opacity:.95}
 /* фирменный знак АК от дизайнеров (2023): бирюзовый, прозрачный фон — вместо картинки-плашки */
 .sh-brand img{width:auto;height:44px;border-radius:0}
 @media (max-width:960px){.sh-brand img{width:auto;height:36px}}
