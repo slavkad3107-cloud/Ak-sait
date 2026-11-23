@@ -461,3 +461,16 @@ header.top{display:none}
 .js .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}
 .js .reveal.in{opacity:1;transform:none}
 @media (max-width:640px){.section{padding:54px 0}.quiz,.lead-form,.hero-card{padding:22px 18px}.container{padding:0 16px}}
+
+/* 24.11.2026 черновик: роботы со старого сайта (2025). Первый экран: справа портрет робота вместо карточки
+   (экспресс-проверка и так есть отдельным разделом #check и кнопкой слева), у формы заявки — робот с документами. */
+.home-hero{position:relative;overflow:hidden}
+.home-hero .hero-card{display:none}
+.hero-robot{position:relative;align-self:stretch;display:flex;align-items:center;justify-content:center}
+.hero-robot img{width:100%;max-width:520px;height:auto;border-radius:28px;
+  -webkit-mask-image:radial-gradient(ellipse 72% 78% at 55% 45%,#000 62%,transparent 100%);
+          mask-image:radial-gradient(ellipse 72% 78% at 55% 45%,#000 62%,transparent 100%)}
+@media (max-width:960px){.hero-robot img{max-width:320px;margin:8px auto 0}}
+.contact-robot{display:block;width:100%;max-width:300px;height:auto;margin:0 auto 18px;border-radius:18px;
+  box-shadow:0 10px 30px rgba(6,107,122,.12)}
+@media (max-width:960px){.contact-robot{max-width:220px}}
