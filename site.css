@@ -492,20 +492,23 @@ header.top{display:none}
 /* заголовки в цвете старого сайта */
 .section h2,.home-hero h1{color:#074952}
 
-/* средний экран (окно приложения, планшет): робот СБОКУ слева отдельной колонкой, текст справа на белом */
+/* «точно как на снимке»: робот фоном слева на всю высоту первого экрана, текст справа — и в узком окне, и на планшете */
 .hero-robot-m{display:none}
-@media (max-width:960px){
-  .home-hero{min-height:0;display:block;background:#fff}
-  .home-hero .hero-grid > div:first-child{grid-column:auto;
-    display:grid;grid-template-columns:38% 1fr;column-gap:22px;align-content:start}
-  .home-hero .hero-grid{grid-template-columns:1fr}
-  .home-hero .hero-grid > div:first-child > *{grid-column:2}
-  .hero-robot-m{display:block;grid-column:1 !important;grid-row:1 / span 6;align-self:stretch;min-height:420px;border-radius:22px;
-    background:url(img/robots/hero-robot-left.webp) 20% 30%/cover no-repeat}
-  .home-hero .hero-grid > div:first-child > .hero-stats{grid-column:1 / -1}
+@media (max-width:960px) and (min-width:641px){
+  .home-hero{min-height:560px;display:flex;align-items:center;
+    background:
+      linear-gradient(270deg,#fff 0%,rgba(255,255,255,.96) 42%,rgba(255,255,255,.7) 56%,rgba(255,255,255,0) 74%),
+      url(img/robots/hero-robot-left.webp) 18% center/cover no-repeat,
+      #eaf6f6}
+  .home-hero .hero-grid{grid-template-columns:38% 1fr}
+  .home-hero .hero-grid > div:first-child{grid-column:2}
+  .home-hero .hero-stats{grid-template-columns:1fr 1fr}
 }
-/* телефон: робот сверху, текст ниже */
+/* телефон: двух колонок не поместить — робот сверху, текст ниже на белом */
 @media (max-width:640px){
-  .home-hero .hero-grid > div:first-child{display:block}
-  .hero-robot-m{min-height:0;height:230px;margin:0 0 16px}
+  .home-hero{min-height:0;display:block;background:#fff}
+  .home-hero .hero-grid{grid-template-columns:1fr}
+  .home-hero .hero-grid > div:first-child{grid-column:1}
+  .hero-robot-m{display:block;height:230px;margin:0 0 16px;border-radius:22px;
+    background:url(img/robots/hero-robot-left.webp) 20% 30%/cover no-repeat}
 }
