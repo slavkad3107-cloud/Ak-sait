@@ -551,3 +551,8 @@ header.top{display:none}
 .ak-cookie p{margin:0;font-size:13.5px;line-height:1.45;color:#33494c}
 .ak-cookie .btn{flex:none}
 @media (max-width:640px){.ak-cookie{left:10px;right:10px;bottom:10px;max-width:none}}
+/* письма заказчиков: скан сверху, цитата ниже */
+.rev.letter{display:flex;flex-direction:column;gap:12px}
+.rev.letter .cred-btn img{height:220px;object-fit:cover;object-position:top}
+.rev.letter blockquote{font-size:14.5px;line-height:1.5}
+.creds-grid .cred-btn img{object-fit:contain}
