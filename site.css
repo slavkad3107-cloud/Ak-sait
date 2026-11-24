@@ -553,7 +553,7 @@ header.top{display:none}
 @media (max-width:640px){.ak-cookie{left:10px;right:10px;bottom:10px;max-width:none}}
 /* письма заказчиков: скан сверху, цитата ниже */
 .rev.letter{display:flex;flex-direction:column;gap:12px}
-.rev.letter .cred-btn img{height:220px;object-fit:cover;object-position:top}
+.rev.letter .cred-btn img{height:240px;object-fit:cover;object-position:center 48%}
 .rev.letter blockquote{font-size:14.5px;line-height:1.5}
 .creds-grid .cred-btn img{object-fit:contain}
 
