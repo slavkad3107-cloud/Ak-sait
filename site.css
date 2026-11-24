@@ -556,3 +556,21 @@ header.top{display:none}
 .rev.letter .cred-btn img{height:220px;object-fit:cover;object-position:top}
 .rev.letter blockquote{font-size:14.5px;line-height:1.5}
 .creds-grid .cred-btn img{object-fit:contain}
+
+/* 24.11.2026: больше роботов — бледным фоном ещё в пяти разделах (как #check/#process) */
+#why{background:
+    linear-gradient(90deg,#eef7f7 0%,rgba(238,247,247,.9) 45%,rgba(238,247,247,.35) 70%,rgba(238,247,247,.05) 100%),
+    url(img/robots/bg-why.webp) right bottom/min(40%,560px) auto no-repeat,#eef7f7}
+#risk{background:
+    linear-gradient(270deg,#fff 0%,rgba(255,255,255,.9) 45%,rgba(255,255,255,.35) 70%,rgba(255,255,255,.05) 100%),
+    url(img/robots/bg-risk.webp) left bottom/min(40%,560px) auto no-repeat,#fff}
+#dogovory{background:
+    linear-gradient(90deg,#fff 0%,rgba(255,255,255,.9) 45%,rgba(255,255,255,.35) 70%,rgba(255,255,255,.05) 100%),
+    url(img/robots/bg-dogovory.webp) right bottom/min(40%,560px) auto no-repeat,#fff}
+#blog{background:
+    linear-gradient(90deg,#eef7f7 0%,rgba(238,247,247,.9) 45%,rgba(238,247,247,.35) 70%,rgba(238,247,247,.05) 100%),
+    url(img/robots/bg-blog.webp) right bottom/min(40%,560px) auto no-repeat,#eef7f7}
+#faq{background:
+    linear-gradient(270deg,#eef7f7 0%,rgba(238,247,247,.9) 45%,rgba(238,247,247,.35) 70%,rgba(238,247,247,.05) 100%),
+    url(img/robots/bg-faq.webp) left bottom/min(40%,560px) auto no-repeat,#eef7f7}
+@media (max-width:960px){#why,#risk,#dogovory,#blog,#faq{background-size:auto,cover}}
