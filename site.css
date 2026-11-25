@@ -574,3 +574,11 @@ header.top{display:none}
     linear-gradient(270deg,#eef7f7 0%,rgba(238,247,247,.9) 45%,rgba(238,247,247,.35) 70%,rgba(238,247,247,.05) 100%),
     url(img/robots/bg-faq.webp) left bottom/min(40%,560px) auto no-repeat,#eef7f7}
 @media (max-width:960px){#why,#risk,#dogovory,#blog,#faq{background-size:auto,cover}}
+/* карточка канала «Живая экология» */
+.zhe-card{margin-top:28px;display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:center;padding:28px 32px;border-radius:22px;background:linear-gradient(120deg,#e3f4f1 0%,#f3faf8 60%,#fff 100%);border:1px solid #cfe9e4}
+.zhe-card h3{font-size:26px;margin:6px 0 8px;color:#074952}
+.zhe-card p{margin:0;color:#3d5558}
+.zhe-links{justify-content:flex-start}
+@media (max-width:760px){.zhe-card{grid-template-columns:1fr;padding:22px}}
+.sf-zhe{margin:14px 0 0;font-size:14px;line-height:1.5;color:inherit;opacity:.9}
+.sf-zhe a{font-weight:600}
