@@ -42,8 +42,25 @@
     var d = document.createElement('div');
     d.className = 'ak-cookie'; d.setAttribute('role', 'region'); d.setAttribute('aria-label', 'Уведомление о cookie');
     d.innerHTML = '<p>Мы используем cookie и Яндекс.Метрику, чтобы сайт работал и становился удобнее. Продолжая пользоваться сайтом, вы соглашаетесь с <a href="/privacy.html">политикой обработки данных</a>.</p><button type="button" class="btn btn-sm">Понятно</button>';
-    d.querySelector('button').onclick = function () { try { localStorage.setItem(KEY, '1'); } catch (e) {} d.remove(); };
-    document.body.appendChild(d);
+    d.querySelector('button').onclick = function () { try { localStorage.setItem(KEY, '1'); } catch (e) {} d.remove(); document.body.classList.remove('cookie-open'); };
+    document.body.appendChild(d); document.body.classList.add('cookie-open');
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', show); else show();
+})();
+
+/* 25.11.2026: телефон — «Показать ещё» у длинных списков, раскрытие карточек аудита */
+(function () {
+  function init() {
+    document.querySelectorAll('.m-limit').forEach(function (g) {
+      var n = g.children.length; if (n <= 3) return;
+      var b = document.createElement('button'); b.type = 'button'; b.className = 'm-more';
+      b.textContent = 'Показать ещё (' + (n - 3) + ')';
+      b.onclick = function () { g.classList.add('open'); b.remove(); };
+      g.parentNode.insertBefore(b, g.nextSibling);
+    });
+    document.querySelectorAll('.fold-cards > *').forEach(function (c) {
+      c.addEventListener('click', function () { c.classList.toggle('open'); });
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();

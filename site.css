@@ -582,3 +582,30 @@ header.top{display:none}
 @media (max-width:760px){.zhe-card{grid-template-columns:1fr;padding:22px}}
 .sf-zhe{margin:14px 0 0;font-size:14px;line-height:1.5;color:inherit;opacity:.9}
 .sf-zhe a{font-weight:600}
+/* 25.11.2026: короче главная */
+.objs-more{margin-top:18px}
+.objs-more summary{cursor:pointer;list-style:none;text-align:center;font-weight:700;color:var(--primary);padding:12px;border:1px dashed var(--primary-100);border-radius:12px;background:var(--bg)}
+.objs-more summary::-webkit-details-marker{display:none}
+.objs-more[open] summary{margin-bottom:18px}
+.objs-h{margin:26px 0 14px;font-size:22px;color:#074952}
+.m-more{display:none}
+@media (max-width:640px){
+  .m-limit:not(.open) > :nth-child(n+4){display:none}
+  .m-more{display:block;width:100%;margin-top:14px;padding:12px;font:inherit;font-weight:700;color:var(--primary);background:var(--bg);border:1px dashed var(--primary-100);border-radius:12px;cursor:pointer}
+  .fold-cards > *{cursor:pointer}
+  .fold-cards > * p{display:none}
+  .fold-cards > *.open p{display:block}
+  .fold-cards > * h3::after{content:' ▾';color:var(--primary)}
+  .fold-cards > *.open h3::after{content:' ▴'}
+  .hero-robot-m{height:140px !important;margin-bottom:12px !important}
+  .home-hero .badge-pill{display:none}
+  .home-hero{padding-top:18px !important}
+  .channels{display:grid !important;grid-template-columns:1fr 1fr;gap:10px}
+  .channels a{padding:10px 12px;font-size:14px}
+  body.cookie-open .fab{bottom:200px}
+}
+body.cookie-open .fab{bottom:110px}
+@media (max-width:640px){body.cookie-open .fab{bottom:210px}}
+/* hero-h1-m: первый экран на телефоне компактнее */
+@media (max-width:640px){.home-hero h1{font-size:28px !important;line-height:1.2}.home-hero .hero-lead{font-size:16px;line-height:1.5}}
+@media (max-width:640px){.fold-cards > *{min-height:0 !important;padding:16px 18px !important}.fold-cards > * h3{margin:0;font-size:17px}.fold-cards > *.open h3{margin-bottom:8px}.m-limit:not(.open) ~ .know-more{display:none}}
