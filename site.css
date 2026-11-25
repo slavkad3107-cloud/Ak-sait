@@ -609,3 +609,6 @@ body.cookie-open .fab{bottom:110px}
 /* hero-h1-m: первый экран на телефоне компактнее */
 @media (max-width:640px){.home-hero h1{font-size:28px !important;line-height:1.2}.home-hero .hero-lead{font-size:16px;line-height:1.5}}
 @media (max-width:640px){.fold-cards > *{min-height:0 !important;padding:16px 18px !important}.fold-cards > * h3{margin:0;font-size:17px}.fold-cards > *.open h3{margin-bottom:8px}.m-limit:not(.open) ~ .know-more{display:none}}
+.svc-group{margin:28px 0 14px;font-size:20px;color:#074952}
+#services .svc-group:first-of-type{margin-top:6px}
+#services .grid-4 .svc h3{font-size:17px}
